@@ -1,0 +1,21 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 13px;
+
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(0, 255, 255, 0.754);
+    padding-inline: 10px;
+    border-radius: 20px;
+    padding-block: 4px;
+    cursor: pointer;
+    box-shadow: 1px 0px 9px 1px cyan;
+
+
+}
