@@ -1,22 +1,23 @@
-
-import React from "react";
+import React, { use } from "react";
 import currencyImg from "../../assets/Currency.png";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.png";
 import { Menu } from "lucide-react";
-import "./Navbar.css"
+import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ navLinkPromise }) => {
+  const navLinkData = use(navLinkPromise);
+  console.log(navLinkData);
+
   return (
- 
     <nav className="nav-container container">
       <div className="flex items-center">
         <span>
-            
-        <Menu></Menu>
+          <Menu></Menu>
         </span>
         <img className="w-11" src={logo} alt="logo" />
       </div>
       <div>
+        <ul></ul>
         <button className="nav-btn font-medium ">
           0 coin
           <span>
@@ -24,8 +25,7 @@ const Navbar = () => {
           </span>
         </button>
       </div>
- 
-   </nav>
+    </nav>
   );
 };
 
