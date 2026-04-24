@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/316600/316605.png",
+    "country": "India",
+    "position": "Batter",
+    "rating": 9.5,
+    "battingStyle": "Right Handed",
+    "price": "21.00 Cr",
+    "team": "Royal Challengers Bengaluru"
+  },
+  {
+    "id": 2,
+    "name": "Cameron Green",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/316400/316485.png",
+    "country": "Australia",
+    "position": "All-Rounder",
+    "rating": 9.5,
+    "battingStyle": "Right Handed",
+    "price": "25.20 Cr",
+    "team": "Kolkata Knight Riders"
+  },
+  {
+    "id": 3,
+    "name": "Sanju Samson",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/316500/316535.png",
+    "country": "India",
+    "position": "Wicketkeeper-Batter",
+    "rating": 9.0,
+    "battingStyle": "Right Handed",
+    "price": "18.00 Cr",
+    "team": "Chennai Super Kings"
+  },
+  {
+    "id": 4,
+    "name": "Jasprit Bumrah",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/316500/316521.png",
+    "country": "India",
+    "position": "Bowler",
+    "rating": 10.0,
+    "battingStyle": "Right Handed",
+    "price": "18.00 Cr",
+    "team": "Mumbai Indians"
+  },
+  {
+    "id": 5,
+    "name": "Shreyas Iyer",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/316500/316531.png",
+    "country": "India",
+    "position": "Batter",
+    "rating": 8.5,
+    "battingStyle": "Right Handed",
+    "price": "26.75 Cr",
+    "team": "Punjab Kings"
+  },
+  {
+    "id": 6,
+    "name": "Rashid Khan",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/316500/316513.png",
+    "country": "Afghanistan",
+    "position": "Bowler",
+    "rating": 9.5,
+    "battingStyle": "Right Handed",
+    "price": "18.00 Cr",
+    "team": "Gujarat Titans"
+  },
+  {
+    "id": 7,
+    "name": "Ruturaj Gaikwad",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/316500/316540.png",
+    "country": "India",
+    "position": "Batter",
+    "rating": 9.0,
+    "battingStyle": "Right Handed",
+    "price": "18.00 Cr",
+    "team": "Chennai Super Kings"
+  },
+  {
+    "id": 8,
+    "name": "Heinrich Klaasen",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/316600/316612.png",
+    "country": "South Africa",
+    "position": "Wicketkeeper-Batter",
+    "rating": 9.5,
+    "battingStyle": "Right Handed",
+    "price": "23.00 Cr",
+    "team": "Sunrisers Hyderabad"
+  },
+  {
+    "id": 9,
+    "name": "Prashant Veer",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/placeholder_uncapped.png",
+    "country": "India",
+    "position": "All-Rounder",
+    "rating": 8.0,
+    "battingStyle": "Right Handed",
+    "price": "14.20 Cr",
+    "team": "Chennai Super Kings"
+  },
+  {
+    "id": 10,
+    "name": "Yashasvi Jaiswal",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/316600/316615.png",
+    "country": "India",
+    "position": "Batter",
+    "rating": 9.0,
+    "battingStyle": "Left Handed",
+    "price": "18.00 Cr",
+    "team": "Rajasthan Royals"
+  },
+  {
+    "id": 11,
+    "name": "Hardik Pandya",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/316500/316515.png",
+    "country": "India",
+    "position": "All-Rounder",
+    "rating": 9.0,
+    "battingStyle": "Right Handed",
+    "price": "16.35 Cr",
+    "team": "Mumbai Indians"
+  },
+  {
+    "id": 12,
+    "name": "Ravindra Jadeja",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/316500/316510.png",
+    "country": "India",
+    "position": "All-Rounder",
+    "rating": 9.2,
+    "battingStyle": "Left Handed",
+    "price": "14.00 Cr",
+    "team": "Rajasthan Royals"
+  }
+]

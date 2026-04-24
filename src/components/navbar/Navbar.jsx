@@ -15,7 +15,7 @@ const Navbar = () => {
       .then((data) => setLinks(data));
   }, []);
 
-  const link = links.map((link) => <Link link={link}></Link>);
+  const link = links.map((link,index) => <Link key={index} link={link}></Link>);
 
   return (
     <nav className=" container">
