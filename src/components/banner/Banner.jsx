@@ -3,7 +3,7 @@ import "./Banner.css";
 import bannerLogo from "../../assets/banner-main.png";
 const Banner = () => {
   return (
-    <section className=" container">
+    <section className="container">
       <div className="banner-container relative  z-2 bg-purple-950 min-h-[100dvh] md:min-h-screen md:py-10 ">
         <div>
           <img src={bannerLogo} alt="banner cricket image" />
@@ -13,7 +13,9 @@ const Banner = () => {
             Assemble Your Ultimate Dream 11 Cricket Team
           </h2>
           <p>Beyond Boundaries Beyond Limits</p>
-          <button>Claim Free Credit</button>
+          <button className="banner-btn">
+            <a href="#">Claim Free Credit</a>
+          </button>
         </div>
       </div>
     </section>
