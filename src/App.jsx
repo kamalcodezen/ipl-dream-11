@@ -18,7 +18,9 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Suspense
-        fallback={<span className="loading loading-spinner loading-xl"></span>}
+        fallback={
+          <span className="loading loading-spinner loading-xl mx-auto mt-50 flex justify-center items-center"></span>
+        }
       >
         <Players playerPromise={playerPromise}></Players>
       </Suspense>
