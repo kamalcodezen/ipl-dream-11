@@ -1,4 +1,16 @@
-.banner-container{
-    background-image:url("../../assets/bg-shadow.png") ;
+.banner-container {
+    background-image: url("../../assets/bg-shadow.png");
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.banner-content {
+    text-align: center;
 }
