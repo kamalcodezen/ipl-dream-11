@@ -7,7 +7,7 @@
     "position": "Batter",
     "rating": 9.5,
     "battingStyle": "Right Handed",
-    "price": "21.00 Cr",
+    "price": 500,
     "team": "Royal Challengers Bengaluru"
   },
   {
@@ -16,9 +16,9 @@
     "image": "https://i.ibb.co/M56y8DCZ/th.jpg",
     "country": "Australia",
     "position": "All-Rounder",
-    "rating": 9.5,
+    "rating": 9.1,
     "battingStyle": "Right Handed",
-    "price": "25.20 Cr",
+    "price": 1000,
     "team": "Kolkata Knight Riders"
   },
   {
@@ -29,7 +29,7 @@
     "position": "Wicketkeeper-Batter",
     "rating": 9.0,
     "battingStyle": "Right Handed",
-    "price": "18.00 Cr",
+    "price": 1500 ,
     "team": "Chennai Super Kings"
   },
   {
@@ -40,7 +40,7 @@
     "position": "Bowler",
     "rating": 10.0,
     "battingStyle": "Right Handed",
-    "price": "18.00 Cr",
+    "price": 2000,
     "team": "Mumbai Indians"
   },
   {
@@ -51,7 +51,7 @@
     "position": "Batter",
     "rating": 8.5,
     "battingStyle": "Right Handed",
-    "price": "26.75 Cr",
+    "price": 1000,
     "team": "Punjab Kings"
   },
   {
@@ -62,7 +62,7 @@
     "position": "Bowler",
     "rating": 9.5,
     "battingStyle": "Right Handed",
-    "price": "18.00 Cr",
+    "price": 1500,
     "team": "Gujarat Titans"
   }
 ]

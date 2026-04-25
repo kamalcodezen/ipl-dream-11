@@ -2,12 +2,24 @@ import React, { useState } from "react";
 import { FaFlag } from "react-icons/fa";
 import { FcBusinessman } from "react-icons/fc";
 
-const Card = ({ player }) => {
+const Card = ({ player, setCoin, coin }) => {
   const [isSelected, setIsSelected] = useState(false);
 
+  const handleSelectedBtn = () => {
+    let newCoin = coin - player.price;
+    if (newCoin >= 0) {
+      alert(`${player.name} selected`);
+      setCoin(newCoin);
+    } else {
+      alert(`Price is low`);
+      return;
+    }
+    setIsSelected(true);
+  };
+
   return (
-    <section className="container w-full">
-      <div className="card bg-white/20 shadow-sm bg-white/20 flex flex-1 ">
+    <section className="container">
+      <div className="card bg-white/20 shadow-sm bg-white/20 w-full ">
         <figure>
           <img
             className="hover:scale-125  transition-transform duration-500 overflow-hidden w-[400px] h-[200px]"
@@ -34,7 +46,7 @@ const Card = ({ player }) => {
           <div className="card-actions justify-end items-center">
             <p>Price: {player.price}</p>
             <button
-              onClick={() => setIsSelected(true)}
+              onClick={handleSelectedBtn}
               className="btn btn-outline btn-secondary"
               disabled={isSelected}
             >

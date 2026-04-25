@@ -4,8 +4,9 @@ import logo from "../../assets/logo.png";
 import { Menu, X } from "lucide-react";
 import "./Navbar.css";
 import Link from "./Link";
+import { FaIndianRupeeSign } from "react-icons/fa6";
 
-const Navbar = () => {
+const Navbar = ({ coin }) => {
   const [links, setLinks] = useState([]);
   const [open, setOpen] = useState(false);
 
@@ -15,7 +16,9 @@ const Navbar = () => {
       .then((data) => setLinks(data));
   }, []);
 
-  const link = links.map((link,index) => <Link key={index} link={link}></Link>);
+  const link = links.map((link, index) => (
+    <Link key={index} link={link}></Link>
+  ));
 
   return (
     <nav className=" container">
@@ -26,7 +29,8 @@ const Navbar = () => {
         <div className="flex items-center gap-8 hidden md:flex">
           <ul className="flex gap-4 ">{link}</ul>
           <button className="nav-btn  font-medium ">
-            0 coin
+            <FaIndianRupeeSign />
+            {coin}Cr
             <span>
               <img className="w-4" src={currencyImg} alt="currency image" />
             </span>
@@ -44,7 +48,8 @@ const Navbar = () => {
           >
             {link}
             <button className="nav-btn w-full font-medium ">
-              <span>0</span> coin
+              <FaIndianRupeeSign />
+              {coin}
               <span>
                 <img className="w-5" src={currencyImg} alt="currency image" />
               </span>
