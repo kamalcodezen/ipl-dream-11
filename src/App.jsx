@@ -23,7 +23,11 @@ function App() {
           <span className="loading loading-spinner loading-xl mx-auto mt-50 flex justify-center items-center"></span>
         }
       >
-        <Players playerPromise={playerPromise} setCoin={setCoin} coin={coin}></Players>
+        <Players
+          playerPromise={playerPromise}
+          setCoin={setCoin}
+          coin={coin}
+        ></Players>
       </Suspense>
     </>
   );

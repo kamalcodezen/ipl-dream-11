@@ -2,10 +2,11 @@ import React, { use, useState } from "react";
 import AvailablePlayers from "../availablePlayers/AvailablePlayers";
 import SelectedPlayer from "../selectedPlayer/SelectedPlayer";
 
-const Players = ({ playerPromise,setCoin,coin }) => {
+const Players = ({ playerPromise, setCoin, coin }) => {
   const players = use(playerPromise);
 
   const [selectedBtn, setSelectedBtn] = useState("available");
+  const [selectedPlayer, setSelectedPlayer] = useState([]);
 
   return (
     <div className="container mt-13">
@@ -32,9 +33,15 @@ const Players = ({ playerPromise,setCoin,coin }) => {
       </div>
 
       {selectedBtn === "available" ? (
-        <AvailablePlayers players={players} setCoin={setCoin} coin={coin}></AvailablePlayers>
+        <AvailablePlayers
+          players={players}
+          setCoin={setCoin}
+          coin={coin}
+          selectedPlayer={selectedPlayer}
+          setSelectedPlayer={setSelectedPlayer}
+        ></AvailablePlayers>
       ) : (
-        <SelectedPlayer></SelectedPlayer>
+        <SelectedPlayer selectedPlayer={selectedPlayer}></SelectedPlayer>
       )}
     </div>
   );
