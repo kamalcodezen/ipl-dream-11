@@ -10,7 +10,11 @@ const Players = ({ playerPromise }) => {
   return (
     <div className="container mt-13">
       <div className="flex justify-between items-center my-7">
-        {selectedBtn === "available" ? <h2 className="text-2xl">Available Players</h2> : <h2 className="text-2xl">Selected Player </h2>}
+        {selectedBtn === "available" ? (
+          <h2 className="text-2xl">Available Players</h2>
+        ) : (
+          <h2 className="text-2xl">Selected Player </h2>
+        )}
         <div>
           <button
             onClick={() => setSelectedBtn("available")}
@@ -27,7 +31,11 @@ const Players = ({ playerPromise }) => {
         </div>
       </div>
 
-      {selectedBtn === "available" ? <AvailablePlayers players={players}></AvailablePlayers> : <SelectedPlayer></SelectedPlayer>}
+      {selectedBtn === "available" ? (
+        <AvailablePlayers players={players}></AvailablePlayers>
+      ) : (
+        <SelectedPlayer></SelectedPlayer>
+      )}
     </div>
   );
 };
