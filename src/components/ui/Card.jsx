@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 import { FaFlag } from "react-icons/fa";
 import { FcBusinessman } from "react-icons/fc";
 
@@ -10,16 +11,16 @@ const Card = ({ player, setCoin, coin, selectedPlayer, setSelectedPlayer }) => {
       (selectPlayer) => selectPlayer.id == player.id,
     );
     if (isExits) {
-      alert(`player already added`);
+      toast.error(`player already added`);
       return;
     }
 
     let newCoin = coin - player.price;
     if (newCoin >= 0) {
-      alert(`${player.name} selected`);
+    toast.success(`${player.name} selected`);
       setCoin(newCoin);
     } else {
-      alert(`Price is low`);
+      toast.error(`Not enough price to purchase this player`);
       return;
     }
 

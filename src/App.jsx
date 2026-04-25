@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Banner from "./components/banner/Banner";
 import Players from "./components/players/Players";
+import { Toaster } from "react-hot-toast";
 
 const playerDataFetch = async () => {
   const res = await fetch("/playerData.json");
@@ -29,6 +30,7 @@ function App() {
           coin={coin}
         ></Players>
       </Suspense>
+      <Toaster />
     </>
   );
 }
