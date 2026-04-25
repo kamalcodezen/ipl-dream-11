@@ -5,7 +5,15 @@ import { FcBusinessman } from "react-icons/fc";
 const Card = ({ player, setCoin, coin, selectedPlayer, setSelectedPlayer }) => {
   const [isSelected, setIsSelected] = useState(false);
 
-  const handleSelectedBtn = () => {
+  const handleSelectedBtn = (player) => {
+    const isExits = selectedPlayer.find(
+      (selectPlayer) => selectPlayer.id == player.id,
+    );
+    if (isExits) {
+      alert(`player already added`);
+      return;
+    }
+
     let newCoin = coin - player.price;
     if (newCoin >= 0) {
       alert(`${player.name} selected`);
@@ -48,7 +56,7 @@ const Card = ({ player, setCoin, coin, selectedPlayer, setSelectedPlayer }) => {
           <div className="card-actions justify-end items-center">
             <p>Price: {player.price}</p>
             <button
-              onClick={handleSelectedBtn}
+              onClick={() => handleSelectedBtn(player)}
               className="btn btn-outline btn-secondary"
               disabled={isSelected}
             >
